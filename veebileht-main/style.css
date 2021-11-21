@@ -1,0 +1,17 @@
+.item{
+    background-color: rgba(255, 251, 1, 0.795);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 20% 60% auto;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    height: 90%;
+}
