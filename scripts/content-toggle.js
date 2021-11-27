@@ -6,7 +6,7 @@ const contentImages = document.querySelectorAll('.content-slider-images img');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
-//Kontrollime mis kell on ja selle järgi valime, mis pildi kuvame
+//Kontrollime mis kell on
 $(document).ready(function() {
     function dateTime() {
         var ndate = new Date();
@@ -19,7 +19,7 @@ Number.prototype.leadingZeroes = function(len) {
     return (new Array(len).fill('0', 0).join('') + this).slice(-Math.abs(len));
 }
 
-//Counter checks daytime
+//
 var d = new Date()
 let counter = 1
 if (d.getHours() < 12){
