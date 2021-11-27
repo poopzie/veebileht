@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retseptid</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/nav-menu-style.css">
+    <link rel="stylesheet" href="styles/content-toggle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be6ac37419.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a class="nav-logo" href="index.html">RETSEPTID.EE</a>
+            <a class="nav-logo" href="home.html">RETSEPTID.EE</a>
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="#breakfast.html" class="nav-link">Hommikusöök</a>
@@ -32,29 +34,20 @@
             </div>
         </nav>
     </header>
-    <div class="content">
-        <div class="content-image">
-            <img src="img/homepage2.jpg" alt="home-page-image-pizza-retseptid" id="main-image">
+    <div class="content-toggle">
+        <i class="fas fa-chevron-right" id="nextBtn"></i>
+        <i class="fas fa-chevron-left" id="prevBtn"></i>
+        <div class="content-slider-images">
+            <img src="img/169-content-slider-3.jpg" alt="" class="slider-stretch" id="lastClone">
+            <img src="img/169-content-slider-1.jpg" alt="" class="slider-stretch">
+            <img src="img/169-content-slider-2.jpg" alt="" class="slider-stretch">
+            <img src="img/169-content-slider-3.jpg" alt="" class="slider-stretch">
+            <img src="img/169-content-slider-1.jpg" alt="" class="slider-stretch" id="firstClone">
         </div>
     </div>
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scripts/navmenu-toggle.js"></script>
+    <script src="scripts/content-toggle.js"></script>
 
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        }
-        const navLink = document.querySelectorAll(".nav-link");
-
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
-    </script>
 </body>
 </html>
