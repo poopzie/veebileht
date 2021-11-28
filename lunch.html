@@ -2,9 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retseptid</title>
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/nav-menu-style.css">
+    <link rel="stylesheet" href="styles/recipe-popup-styles.css">
+    <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--Header-->
+<header class="header">
+    <nav class="navbar">
+        <a class="nav-logo" href="home.html">RETSEPTID.EE</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="breakfast.html" class="nav-link">Hommikusöök</a>
+            </li>
+            <li class="nav-item">
+                <a href="lunch.html" class="nav-link">Lõunasöök</a>
+            </li>
+            <li class="nav-item">
+                <a href="dinner.html" class="nav-link">Õhtusöök</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<!--Modals-->
+<div class="modals">
+    <!--modal 1-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-1" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/lunch-recipes/lunch-1.png" alt="" data-target="recipe-modal-1" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-1" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-1" data-toggle="modal">Kana/kartuli vorm</h1>
+                <div class="fig-icon" data-target="recipe-modal-1" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-1" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-1" data-toggle="modal">1h</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-1" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-1" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Kanapasta Karri Kastmes</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/lunch-recipes/lunch-1.png" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>~500g kartuleid</li>
+                            <li>~500g broilerifileed</li>
+                            <li>1 sibul</li>
+                            <li>200g vahukoort</li>
+                            <li>2 muna</li>
+                            <li>sool</li>
+                            <li>pipar</li>
+                            <li>tšilli pipar</li>
+                            <li>karri</li>
+                            <li>õli</li>
+                            <li>1 tomat</li>
+                            <li>120g juustu</li>
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                            <p> Ahjuvormi põhja haki ära sibul. Viiluta kartulid ja aseta sibulate peale. Lisa õli. Maitsesta soola ja pipraga.
+                                Lõika kana väikesteks tükkideks ja maitsesta tšillipipra, soola ja pipraga. Lisa kana vormi. Võta kauss ja sega seal kokku 2 muna, 1 teelusikatäis karrit,
+                                200ml vahukoort ja sool. Vala koorekaste vormi. Kata vorm fooliumiga või küpsetuspaberiga ja lase ahjus 220C juures küpseda 40minutit.
+                                Peale küpsemist viiluta tomat ja lisa vormile koos juustuga. Küpseta veel 10 minutit ahjus.<br>
+                                Naudi 
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 2-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-2" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/lunch-recipes/2. retsept.png" alt="" data-target="recipe-modal-2" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-2" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-2" data-toggle="modal">Makaroni vorm</h1>
+                <div class="fig-icon" data-target="recipe-modal-2" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-2" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-2" data-toggle="modal">30-40min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-2" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-2" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Hakkliha ja makaroni vorm</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/lunch-recipes/2. retsept.png" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>1 sibul</li>
+                            <li>500g hakkliha</li>
+                            <li>õli</li>
+                            <li>3 tomatit</li>
+                            <li>500g makarone</li>
+                            <li>30ml tomati pastat</li>
+                            <li>250ml vett</li>
+                            <li>pitsamaitseaine</li>
+                            <li>30ml võid</li>
+                            <li>500ml piima</li>
+                            <li>500ml juustu (riivitud)</li>
+                            <li>2 muna</li>
+                            <li>30ml jahu</li>
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                        <p> Kuumuta pannil õli ja pra selle sees hakitud sibul läbi. Lisa hakkliha ja prae, kuni liha on pruun. Lisa lõigatud tomatid, tomatipasta, vesi ja pitsamaitseaine.
+                            Lase küpseda, kuni vedelikku on poole vähem alles. Samal ajal keeda makaronid vastavalt juhendile ja lisa hakklihale. Võta teine pann ja sulata või sellega. Seejärel
+                            sega sisse jahu. Lase 1 minut küpseda ja sega sisse piim. Seejärel segada madalal kuumusel, kuni segu on veidi tihenenud. Eemalda pann kuumuselt ja sega sisse juust. Kui juust sulanud on siis sega sisse munad.
+                            Pane hakkliha segu ahjuvormi ja sega juustuseguga. Lisa veel natuke riivjuustu tomatitega ja küpseta ahjus 180C 25 minutit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 3-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-3" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/lunch-recipes/3.retsept.png" alt="" data-target="recipe-modal-3" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-3" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-3" data-toggle="modal">Kana wrapid</h1>
+                <div class="fig-icon" data-target="recipe-modal-3" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-3" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-3" data-toggle="modal">20-25min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-3" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-3" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Kana wrapid</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/lunch-recipes/3.retsept.png" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>tortillasid</li>
+                            <li>~500g kana</li>
+                            <li>guacamole kastme segu</li>
+                            <li>salatilehed</li>
+                            <li>juust</li>
+                            <li>salsa kaste</li>
+                            <li>tomat</li>
+                            <li>3 küpset avokaadot</li>
+                            <li>1 laimi mahl</li>
+                            <li>2-4 küüslauguküünt</li>
+                            <li>soola ja musta pipart</li>
+                            <li>Paprika</li>
 
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                        <p> Suru avokaadod kahvliga katki, lisa laimimahl ja purustatud küüslauk. 
+                            Maitsesta soolaga. Tükelda kana ja prae pannil läbi. Valmista koostisosadest enda maitse järgi maitsvaid wrappe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 4-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-3" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/lunch-recipes/4. retsept.png" alt="" data-target="recipe-modal-4" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-4" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-4" data-toggle="modal">Riis kanaga</h1>
+                <div class="fig-icon" data-target="recipe-modal-4" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-4" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-4" data-toggle="modal">25-40min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-4" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-4" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Riis kanaga</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/lunch-recipes/4. retsept.png" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>1 tk Muna</li>
+                            <li>1 tk Väike sibul</li>
+                            <li>1 tk Küüslauguküüs</li>
+                            <li>0.5 tk Paprika</li>
+                            <li>150 g Küpsetatud kanaliha</li>
+                            <li>250 g Keedetud riis</li>
+                            <li>1 peotäis Herned</li>
+                            <li>Õli praadimiseks</li>
+                            <li>Tšillihelbed või -pulber</li>
+                            <li>Magus tšillikaste</li>
+                            <li>Sojakaste</li>
+                            <li>Sool</li>
+                            <li>Must pipar</li>
+
+
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                        <p> Kõigepealt prae omlett. Selleks klopi muna lahti.Kuumuta pannil veidi õli, vala muna pannile ja küpseta paari minutiga õhuke omlett. Lõika tükikesteks ja jäta ootele.
+                            Haki sibul ja küüslauk. Lõika paprika ja kanaliha tükkideks. Kuumuta pannil taas õli. Prae selles sibulat, küüslauku ja paprikat madalal kuumusel, kuni sibul on läbipaistev ja paprika hakkab pehmenema. Tõsta kuumust ja lisa keedetud riis. Maitsesta soola ja pipraga ning kui soovid roale ekstra teravust, lisa ka tšillihelbeid või -pulbrit.
+                            Prae segades läbi. Lõpuks lisa kanaliha, herned ja ootele pandud omletitükikesed. Maitsesta sojakastme ja magusa tšillikastmega, mõlemat kulub paar supilusikatäit. Sega ja prae veel, kuni nii liha kui herned on korralikult läbi kuumenenud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 5-->
+    <div class="recipe-modal">
+    </div>
+    <figure data-target="recipe-modal-5" data-toggle="modal">
+        <!--Pilt esimest korda-->
+        <img src="img/lunch-recipes/5.retsept.jpg" alt="" data-target="recipe-modal-5" data-toggle="modal" class="recipe-image">
+        <div class="fig-description" data-target="recipe-modal-5" data-toggle="modal">
+            <h1 class="fig-descr-header" data-target="recipe-modal-5" data-toggle="modal">Ahjupasta juustuga</h1>
+            <div class="fig-icon" data-target="recipe-modal-5" data-toggle="modal">
+                <i class="far fa-clock" data-target="recipe-modal-5" data-toggle="modal"></i>
+                <p class="fig-text" data-target="recipe-modal-5" data-toggle="modal">30min-1h</p>
+            </div>
+            <button class="figure-button" data-target="recipe-modal-5" data-toggle="modal">Loe edasi</button>
+        </div>
+    </figure>
+    <div id="recipe-modal-5" class="modal">
+        <div class="modal-window">
+            <div class="close">
+                <i class="fas fa-window-close" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-window-content">
+                <!--Retsepti nimi siia:-->
+                <h3 class="modal-window-content-heading">Ahjupasta juustuga</h3>
+                <!--Pilt teistkorda (läheb pop up sisse)-->
+                <img src="img/lunch-recipes/5.retsept.jpg" alt="" class="modal-content-window-img">
+                <div class="modal-window-content-text">
+                    <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                    <!--Koostisosad siia:-->
+                    <ul>
+                        <li>400 g luhikest pastat</li>
+                        <li>2 sl oliivioli</li>
+                        <li>2-3 kuuslaugukuunt hakituna</li>
+                        <li>2-3 sl palsamiveiniaadikat</li>
+                        <li>500 g ehk 1 purk Maggi Itaalia tomatikastet</li>
+                        <li>3 dl puljongit</li>
+                        <li>2 tl suhkrut</li>
+                        <li>Varsket basiilikut</li>
+                        <li>200 g juustu riivituna</li>
+                        <li>Soola ja pipart</li>
+                    </ul>
+                    <h3 class="recipe-instructions">Valmistamine:</h3>
+                    <!--Valmistamise juhend siia:-->
+                    <p> Kuumuta pannil õli ja prae keskmisel kuumusel küüslauku mõni minut. Kalla siis pannile palsamiveiniäädikas ja kuumuta, kuni see hakkab mullitama. Kalla pannile tomatikaste ja puljong ning lase keema tõusta. Keeda mõni minut ja maitsesta kaste siis suhkru, soola, pipra ja värske basiilikuga.
+                        Keeda pastat soolaga maitsestatud vees mõni minut vähem, kui pakendile märgitud. Kurna ja sega siis tomatikastmega. Tõsta tomatikastmega segatud pasta ahjuvormi, puista peale riivitud juust ja küpseta ahjus 180-200 kraadi juures 15-20 minutit, kuni juust on sulanud ja kuldne. Serveerides puista peale veel värsket basiilikut. Serveeri kohe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-items">
+        <ul class="footer-links">
+            <li><h3 id="footer-useful-links">Kasulikud lingid:</h3></li>
+            <li><a href="#" class="footer-link">Privaatsuspoliitika</a></li>
+            <li><a href="#" class="footer-link">Kasutajatingimused</a></li>
+        </ul>
+        <div class="footer-socials">
+            <p id="socialMedia">Jälgi meie toimetusi sotsiaalmeedias!</p>
+            <div class="footer-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Scripts-->
+<script src="https://kit.fontawesome.com/be6ac37419.js" crossorigin="anonymous"></script>
+<script src="scripts/recipe-popup.js"></script>
 </body>
 </html>
