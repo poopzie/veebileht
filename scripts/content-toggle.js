@@ -7,32 +7,24 @@ const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
 //Kontrollime mis kell on
-$(document).ready(function() {
-    function dateTime() {
-        var ndate = new Date();
-        var hours = ndate.getHours();
-    setInterval(dateTime, 1000);
-    }
-});
-
-Number.prototype.leadingZeroes = function(len) {
-    return (new Array(len).fill('0', 0).join('') + this).slice(-Math.abs(len));
+var ndate = new Date();
+var hours = ndate.getHours();
+if (hours < 12){
+    number = 1
 }
-
-//
-var d = new Date()
-let counter = 1
-if (d.getHours() < 12){
-    counter = 1;
-}else if(d.getHours()<18){
-    counter = 2;
-}else{
-    counter = 3;
+if (hours >= 12 && hours < 18 ){
+    number = 2
 }
-
-const size = contentImages[0].clientWidth;
+if (hours >= 18 && hours <= 23){
+    number = 3
+}
+let counter = number
+let size = contentImages[0].clientWidth;
 
 contentSlide.style.transform = 'translateX('+ ( -size * counter) + 'px)';
+console.log(counter)
+console.log(size)
+console.log(contentSlide.style.transform)
 
 //Button Listeners
 
@@ -41,6 +33,8 @@ nextBtn.addEventListener('click', () =>{
     contentSlide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
     contentSlide.style.transform = 'translateX(' + ( -size * counter) + 'px)';
+    console.log(contentSlide.style.transform)
+
 });
 prevBtn.addEventListener('click', () => {
     if (counter <= 0) return;
@@ -60,3 +54,10 @@ contentSlide.addEventListener('transitionend', ()=>{
         contentSlide.style.transform = 'translateX(' + ( -size * counter) + 'px)';
     }
 });
+
+window.addEventListener('resize', () => {
+    contentSlide.style.transition = "none";
+    size = contentImages[0].clientWidth;
+    contentSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+

@@ -1,0 +1,61 @@
+.footer{
+    padding: 3rem 5rem 3rem 5rem;
+    border-top: 1px solid #E2E8F0;
+    margin: auto;
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+}/*https://stackoverflow.com/a/53551089*/
+
+.footer-socials{
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+}
+.footer-links{
+    left: 5%;
+    font-size: 2rem;
+}
+.footer-link{
+    text-decoration: none;
+    color: black;
+}
+#socialMedia{
+    margin-right: 5rem;
+    float: left;
+    font-size: 2rem;
+}
+.footer-icons{
+    margin: 0 2rem 0 2rem;
+}
+.fa-facebook-square{
+    color: #1877f2;
+}
+.fa-instagram-square{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}/*https://stackoverflow.com/a/44940095*/
+
+.fa-twitter-square{
+    color: #1DA1F2;
+}
+#footer-useful-links{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 1300px) {
+    .footer-socials p{
+    display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+      .footer-items{
+      background: none;
+  }
+}
