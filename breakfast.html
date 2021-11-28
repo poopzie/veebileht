@@ -5,35 +5,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retseptid</title>
+    <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="styles/nav-menu-style.css">
+    <link rel="stylesheet" href="styles/recipe-popup-styles.css">
+    <link rel="stylesheet" href="styles/footer-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="topnav" id="mytopnav">
+<!--Header-->
+<header class="header">
     <nav class="navbar">
-        <a href="home.html" class="navbar_logo">RETSEPTID.EE</a>
-        <ul class="navbar_menu">
-            <li class="navbar_item">
-                <a href="breakfast.html" class="navbar_links">Hommikusöök</a>
+        <a class="nav-logo" href="home.html">RETSEPTID.EE</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="breakfast.html" class="nav-link">Hommikusöök</a>
             </li>
-            <li class="navbar_item">
-                <a href="#lunch" class="navbar_links">Lõunasöök</a>
+            <li class="nav-item">
+                <a href="lunch.html" class="nav-link">Lõunasöök</a>
             </li>
-            <li class="navbar_item">
-                <a href="#dinner" class="navbar_links">Õhtusöök</a>
+            <li class="nav-item">
+                <a href="dinner.html" class="nav-link">Õhtusöök</a>
             </li>
         </ul>
-        <div class="navbar_mobile">
-            <span class="icon_bar"></span>
-            <span class="icon_bar"></span>
-            <span class="icon_bar"></span>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>
+</header>
+<!--Modals-->
+<div class="modals">
+    <!--modal 1-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-1" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/breakfast-recipes/breakfast-1.jpg" alt="" data-target="recipe-modal-1" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-1" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-1" data-toggle="modal">Väikesed paksud pannkoogid </h1>
+                <div class="fig-icon" data-target="recipe-modal-1" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-1" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-1" data-toggle="modal">30min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-1" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-1" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Väikesed Paksud Pannkoogid </h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/breakfast-recipes/breakfast-1.jpg" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>1 muna</li>
+                            <li>1/2 sl suhkrut</li>
+                            <li>200 ml (1 tass) piima</li>
+                            <li>200 ml (1 tass) jahu</li>
+                            <li>1 tl soodat</li>
+                            <li>1 tl õuna- või viinamarjaäädikat</li>
+                            <li>oliiviõli praadimiseks</li>
+                            <li>tuhksukrut, mündilehti, maasikaid vm lisandiks ja dekoreerimiseks</li>
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                            <p> Klopi kergelt vahule muna ja suhkur, mitte liiga vahule ei ole vaja kloppida.
+                                Lisa enamus osa piimast, sega läbi, lisa supilusika kaupa pool jahust. 
+                                Sega jahu ja munapiimasegu ühtlaseks. 
+                                Teisele osale jahule sega sisse sooda ja lisa samuti osade kaupa tainale tainast segades, et jahu ei läheks tükki. 
+                                Vajadusel lisa juurde piima. Vaata, et tainas oleks parajalt paks. 
+                                Lõpuks sega juurde 1 tl õuna (viinamarja) äädikat. 
+                                Sobib ka täitsa tavaline äädikas. 
+                                Vanaema lisas tavalist äädikat sortsukese.
+                                Lase õli pannil kuumaks. 
+                                Pane parajad portsud tainast pannile ja küpseta mõlemalt poolt.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 2-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-2" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/breakfast-recipes/breakfast-2.jpg" alt="" data-target="recipe-modal-2" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-2" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-2" data-toggle="modal">Leib singi ja määrdejuustuga</h1>
+                <div class="fig-icon" data-target="recipe-modal-2" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-2" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-2" data-toggle="modal">5min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-2" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-2" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Seesamileivake Serrano singi ja määrdejuustuga</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/breakfast-recipes/breakfast-2.jpg" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>2 seesamiseemnetega näkileiba (või muud näkileiba)</li>
+                            <li>2 viilu Serrano sinki või muud õhukeseks lõigatud Vahemeremaade sinki</li>
+                            <li>3 kirsstomatit</li>
+                            <li>Balsamico kreemit</li>
+                            <li>Värskelt jahvatatud musta pipart</li>
+                            <li>Peterselli oksake</li>
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                        <p> Määri leibadele õhuke juustukiht. 
+                            Pane ilusasti peale singiviilud. 
+                            Sektoriteks lõigatud tomatid. 
+                            Jahavata peale musta pipart, nirista balsamico kreemi. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal 3-->
+    <div class="recipe-modal">
+        <figure data-target="recipe-modal-3" data-toggle="modal">
+            <!--Pilt esimest korda-->
+            <img src="img/breakfast-recipes/breakfast-3.jpg" alt="" data-target="recipe-modal-3" data-toggle="modal" class="recipe-image">
+            <div class="fig-description" data-target="recipe-modal-3" data-toggle="modal">
+                <h1 class="fig-descr-header" data-target="recipe-modal-3" data-toggle="modal">Ricotta kohupiim</h1>
+                <div class="fig-icon" data-target="recipe-modal-3" data-toggle="modal">
+                    <i class="far fa-clock" data-target="recipe-modal-3" data-toggle="modal"></i>
+                    <p class="fig-text" data-target="recipe-modal-3" data-toggle="modal">10min</p>
+                </div>
+                <button class="figure-button" data-target="recipe-modal-3" data-toggle="modal">Loe edasi</button>
+            </div>
+        </figure>
+        <div id="recipe-modal-3" class="modal">
+            <div class="modal-window">
+                <div class="close">
+                    <i class="fas fa-window-close" data-dismiss="modal"></i>
+                </div>
+                <div class="modal-window-content">
+                    <!--Retsepti nimi siia:-->
+                    <h3 class="modal-window-content-heading">Ricotta kohupiim kirsside, inka- või muude marjadega, seemnetega kohupiima sai</h3>
+                    <!--Pilt teistkorda (läheb pop up sisse)-->
+                    <img src="img/breakfast-recipes/breakfast-3.jpg" alt="" class="modal-content-window-img">
+                    <div class="modal-window-content-text">
+                        <h3 class="recipe-ingredients">Valmistamiseks vaja:</h3>
+                        <!--Koostisosad siia:-->
+                        <ul>
+                            <li>2 värske koduse rosina või muu saia viilu. Võib kasutada ka Belgia vahvlit, küpsist, korvikest vmt</li>
+                            <li>100 g ricotta kohupiima</li>
+                            <li>2 sl maitsestamata Kreeka jogurtit 10%</li>
+                            <li>mõned värsked marjad või külmutatud marjad või rosinad</li>
+                            <li>1 tl seemneid saia kohta või 2 Kreeka pähklit</li>
+                        </ul>
+                        <h3 class="recipe-instructions">Valmistamine:</h3>
+                        <!--Valmistamise juhend siia:-->
+                        <p> Sega riccota kohupiim ja jogurt. 
+                            Tõsta saiaviilule suur lusikatäis segu ja pane peale kaunistuseks marju.
+                            Soovi korral küpseta saiu ahjus 5 - 7 min grillirežiimil. 
+                            Söö soojalt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="main_content">
-
-</div>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-items">
+        <ul class="footer-links">
+            <li><h3 id="footer-useful-links">Kasulikud lingid:</h3></li>
+            <li><a href="#" class="footer-link">Privaatsuspoliitika</a></li>
+            <li><a href="#" class="footer-link">Kasutajatingimused</a></li>
+        </ul>
+        <div class="footer-socials">
+            <p id="socialMedia">Jälgi meie toimetusi sotsiaalmeedias!</p>
+            <div class="footer-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Scripts-->
+<script src="https://kit.fontawesome.com/be6ac37419.js" crossorigin="anonymous"></script>
+<script src="scripts/recipe-popup.js"></script>
 </body>
 </html>
