@@ -1,4 +1,6 @@
 //Video tutoorial  https://www.youtube.com/watch?v=KcdBOoK3Pfw&ab_channel=DevEd
+
+//Ootame kuni kogu lehekülje CSS on ära laadinud ja siis tegutseme edasi
 window.addEventListener('load', (event) => {
     console.log('page is fully loaded');
     const contentSlide = document.querySelector('.content-slider-images');
@@ -20,13 +22,14 @@ window.addEventListener('load', (event) => {
     if (hours >= 18 && hours <= 23){
         number = 3
     }
+    // Vastavalt kellale kuvame veebilehele pildi
     let counter = number
     let size = contentImages[0].clientWidth;
     contentSlide.style.transform = 'translateX('+ ( -size * counter) + 'px)';
     console.log(number)
 
 
-    //Button Listeners
+    //Sündmuse kuulaja mis on nupu küljes, liigutab pildi võrra edasi
 
     nextBtn.addEventListener('click', () =>{
         if (counter >= contentImages.length -1) return;
@@ -36,12 +39,16 @@ window.addEventListener('load', (event) => {
         console.log(contentSlide.style.transform)
 
     });
+
+    //Sündmuse kuulaja mis on nupu küljes, liigutab pildi võrra edasi
+
     prevBtn.addEventListener('click', () => {
         if (counter <= 0) return;
         contentSlide.style.transition = 'transform 0.4s ease-in-out';
         counter--;
         contentSlide.style.transform = 'translateX(' + ( -size * counter) + 'px)';
     });
+    //Sündmuse kuulaja mis tuvastab kui oleme jõudnud viimasele pildile
     contentSlide.addEventListener('transitionend', ()=>{
         if (contentImages[counter].id === "lastClone"){
             contentSlide.style.transition = "none"
@@ -55,6 +62,7 @@ window.addEventListener('load', (event) => {
         }
     });
 
+    //Sündmuse kuulaja et muuta slider suurusetundlikuks
     window.addEventListener('resize', () => {
         contentSlide.style.transition = "none";
         size = contentImages[0].clientWidth;
