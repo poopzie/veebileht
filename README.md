@@ -3,7 +3,7 @@
 Antud kursuse raames tehtud veebilehe eesmärk on muuta parimad retsetpid üliõpilastele lihtsasti kättesaadavaks.
 
 <b>Tiimiliikmed:</b><br>
-Sten Marcus Nelsson<br>
+Sten Marcus Nelson<br>
 Armand Songisepp<br>
 Alo Martin Pallase<br>
 
